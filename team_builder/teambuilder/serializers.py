@@ -16,4 +16,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class TeamSerializer(serializers.ModelSerializer):
     class Meta:
         model = Team
-        fields = ['id', 'name', 'description', 'createdAt', 'updatedAt']
+        fields = ['id', 'uuid', 'name', 'description', 'createdAt', 'updatedAt', 'players']
